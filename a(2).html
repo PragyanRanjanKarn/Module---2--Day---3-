@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+
+    <script>
+        var n = [70, 1, 20, 40, 10];
+        document.getElementById("i1").innerHTML = n;
+        function f1(num) {
+            return num * 10;
+        }
+
+        var n1 = n.map(f1);
+        document.getElementById("i2").innerHTML = n1;
+        document.write("<br>" + "2+2" + "<br>");
+        document.write("<br>" + eval("2 + 2") + "<br>")
+    </script>
+</body>
+
+</html>
