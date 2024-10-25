@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <button onclick="asc()">Ascending</button>
+    <button onclick="desc()">Descending</button>
+
+    <button onclick="asc1()">Ascending Names</button>
+    <button onclick="desc1()">Descending Names</button>
+    <script>
+        var ar = [3, 7, 1, -2, 5]
+        document.getElementById("i1").innerHTML = ar;
+        function asc() {
+            ar.sort(function (a, b) { return a - b });
+            document.getElementById("i1").innerHTML = ar;
+        }
+
+        function desc() {
+            ar.sort(function (a, b) { return b - a });
+            document.getElementById("i1").innerHTML = ar;
+        }
+
+        var ar1 = ['Pragyan', 'Bilal', 'Milind'];
+        document.getElementById("i2").innerHTML = ar1;
+
+        function asc1() {
+            ar1.sort();
+            document.getElementById("i2").innerHTML = ar1;
+        }
+
+        function desc1() {
+            ar1.sort().reverse();
+            document.getElementById("i2").innerHTML = ar1;
+        }
+    </script>
+</body>
+
+</html>
